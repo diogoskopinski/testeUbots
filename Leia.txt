@@ -1,0 +1,28 @@
+/* Diogo F. Skopinski - 18/09/20  - TesteUbots */
+
+Leia com Atenção:
+
+Passo a passo para o bom funcionamento e resultados certos:
+
+** Utilizei Xampp, Mysql
+
+1) loja_vinho_BD.sql  executar para criar tabelas.
+
+2) no index.html, clicar na: Etapa 1: Importar Dados MariaDb - Clientes - json
+	*Importara os clientes do arquivo json para o banco
+
+3) rodar arquivo: insere_itens.sql no banco de dados.
+	*Irá importar os itens, exportados e importados os dados em json para mysql.
+
+4) no index.html, clicar na: Etapa 2: Insere Carrinho de Compras - json
+	*Importará os dados das compras e seus itens, e alimentara a tabela carrinho_compras
+	
+5) rodar arquivo: ajuste_Cpf_Clientes_Compras.sql no banco de dados.
+	*Irá ajutar os dados do cpf na tabela compras.
+	
+	
+6) 	Pronto o sistema já está funcional, agora só clicar no desejado para ver o resultado das consulas abaixo:
+	a) Liste os clientes ordenados pelo maior valor total em compras.
+	b) Mostre o cliente com maior compra única no último ano (2016).
+	c) Liste os clientes mais fiéis.
+	d) Recomende um vinho para um determinado cliente a partir do histórico de compras.
